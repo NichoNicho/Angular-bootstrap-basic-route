@@ -1,3 +1,16 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container alert-warning">
+  <div class="row">
+    <div class="text-center">
+      <h2><strong>This is App Component!!!</strong></h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="container alert-info col-md-4">
+      <a [routerLink]="['/component-one']">Component One</a>
+    </div>
+    <div class="container alert-success col-md-4 col-md-push-4">
+      <a [routerLink]="['/component-two']">Component Two</a>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</div>
